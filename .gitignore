@@ -22,3 +22,7 @@ application/logs/*
 /application/language
 /application/logs
 /application/third_party
+/assets/css/materialize.css
+/assets/css/materialize.min.css
+/assets/js/materialize.js
+/assets/js/materialize.min.js
