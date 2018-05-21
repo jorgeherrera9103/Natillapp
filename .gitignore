@@ -26,3 +26,5 @@ application/logs/*
 /assets/css/materialize.min.css
 /assets/js/materialize.js
 /assets/js/materialize.min.js
+/node_modules
+*package-lock.json
