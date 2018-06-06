@@ -21,15 +21,10 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /nbproject/
 .idea/*
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
 /tests/tests/
 /tests/results/
 *license.txt
+*readme.rst
 /.vscode
 /system
 /user_guide
@@ -41,3 +36,8 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /application/language
 /application/logs
 /application/third_party
+/application/config/doctypes.php
+*composer.json
+*contributing.md
+*index.php
+*readme.rst
