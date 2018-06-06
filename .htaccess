@@ -1,0 +1,44 @@
+# proceso de quitar el index.php desde nuestro proyecto
+# todo esto se desarrolla dentro de la opcion mod_rewrite del apache
+# 1. hay que indicarle que cuando encuetre las carpetas systemas y aplication
+# las pueda interpretar sin necesidad de pasar por el index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_URI} ^system.*
+    RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+    # si la carpeta aplication no esta en el system
+    # aplicarle la siguiente regla
+
+    RewriteCond %{REQUEST_URI} ^application.*
+    RewriteRule ^(.*)$ /Natillapp1/index.php?/$1 [L]
+
+    # las siguientes configuraciones son para 
+    # proteger contar sql injection, contra cross scripting
+    # contra negacion de servicio de aerchivos prohibidos
+    # evitar que alguine trate de entrar a una subcarpeta 
+    # que no tenga archivos validos
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /Natillapp1/index.php?/$1 [L]
+ </IfModule> 
+<IfModule !mod_rewrite.c>
+	# si no esta habilitado el servcio rewrite entonces que lo mande la manera
+	# normal del CI
+
+	ErrorDocument 404 /index.php
+
+
+</IfModule> 
+
+
+
+
+
+
+
+
