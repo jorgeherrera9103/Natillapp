@@ -38,7 +38,7 @@ class Login extends CI_Controller {
 				);
 				// invocar la libreria session y su metodo set_userdata
 				$this->session->set_userdata($data_session);
-				redirect('welcome');
+				redirect('principal');
 			} else {
 				redirect('/');
 			}
