@@ -41,4 +41,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *contributing.md
 *index.php
 *readme.rst
+/assets
+/pages
 
