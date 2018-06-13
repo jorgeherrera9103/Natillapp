@@ -12,21 +12,21 @@
       <div class="sidebar-overlay-slide from-top" id="appMenu">
         <div class="row">
           <div class="col-xs-6 no-padding">
-            <a href="#" class="p-l-40"><img src="assets/img/demo/social_app.svg" alt="socail">
+            <a href="#" class="p-l-40"><img src="<?php echo base_url();?>assets/img/demo/social_app.svg" alt="socail">
             </a>
           </div>
           <div class="col-xs-6 no-padding">
-            <a href="#" class="p-l-10"><img src="assets/img/demo/email_app.svg" alt="socail">
+            <a href="#" class="p-l-10"><img src="<?php echo base_url();?>assets/img/demo/email_app.svg" alt="socail">
             </a>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-6 m-t-20 no-padding">
-            <a href="#" class="p-l-40"><img src="assets/img/demo/calendar_app.svg" alt="socail">
+            <a href="#" class="p-l-40"><img src="<?php echo base_url();?>assets/img/demo/calendar_app.svg" alt="socail">
             </a>
           </div>
           <div class="col-xs-6 m-t-20 no-padding">
-            <a href="#" class="p-l-10"><img src="assets/img/demo/add_more.svg" alt="socail">
+            <a href="#" class="p-l-10"><img src="<?php echo base_url();?>assets/img/demo/add_more.svg" alt="socail">
             </a>
           </div>
         </div>
@@ -34,7 +34,7 @@
       <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
       <!-- BEGIN SIDEBAR MENU HEADER-->
       <div class="sidebar-header">
-        <img src="assets/img/logo_white.png" alt="logo" class="brand" data-src="assets/img/logo_white.png" data-src-retina="assets/img/logo_white_2x.png" width="78" height="22">
+        <img src="<?php echo base_url();?>assets/img/natillapp_logo.svg" alt="logo" class="brand" data-src="<?php echo base_url();?>assets/img/natillapp_logo.svg" data-src-retina="<?php echo base_url();?>assets/img/natillapp_logo.svg" width="78" height="22">
         <div class="sidebar-header-controls">
           <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20 hidden-md-down" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
           </button>
@@ -48,38 +48,66 @@
         <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
           <li class="m-t-30 ">
-            <a href="index.html" class="detailed">
+            <a href="<?php echo base_url();?>./principal"class="detailed">
               <span class="title">Dashboard</span>
-              <span class="details">12 New Updates</span>
+              <span class="details">12 Actualizaciones</span>
             </a>
             <span class="bg-success icon-thumbnail"><i class="pg-home"></i></span>
           </li>
-          <li class="">
-            <a href="email.html" class="detailed">
-              <span class="title">Email</span>
-              <span class="details">234 New Emails</span>
-            </a>
-            <span class="icon-thumbnail"><i class="pg-mail"></i></span>
-          </li>
-          <li class="">
-            <a href="social.html"><span class="title">Social</span></a>
-            <span class="icon-thumbnail"><i class="pg-social"></i></span>
-          </li>
+
+
+
           <li>
-            <a href="javascript:;"><span class="title">Calendar</span>
+            <a href="javascript:;"><span class="title">Socios</span>
+            <span class=" arrow"></span></a>
+            <span class="icon-thumbnail"><i class="pg-grid"></i></span>
+            <ul class="sub-menu">
+              <li class="">
+                <a href="<?php echo base_url();?>./Socios">Listado Socios</a>
+                <span class="icon-thumbnail">L S</span>
+              </li>
+              <li class="">
+                <a href="<?php echo base_url();?>./Socios/index/add">Nuevo Socio</a>
+                <span class="icon-thumbnail">N S</span>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="javascript:;"><span class="title">Cuotas</span>
+            <span class=" arrow"></span></a>
+            <span class="icon-thumbnail"><i class="pg-bag"></i></span>
+            <ul class="sub-menu">
+              <li class="">
+                <a href="<?php echo base_url();?>./Cuota">Listado Cuotas</a>
+                <span class="icon-thumbnail">L S</span>
+              </li>
+              <li class="">
+                <a href="<?php echo base_url();?>./Cuota/index/add">Nueva Cuota</a>
+                <span class="icon-thumbnail">N S</span>
+              </li>
+            </ul>
+          </li>
+
+
+
+
+          
+          <li>
+            <a href="javascript:;"><span class="title">Calendario</span>
             <span class=" arrow"></span></a>
             <span class="icon-thumbnail"><i class="pg-calender"></i></span>
             <ul class="sub-menu">
               <li class="">
-                <a href="calendar.html">Basic</a>
+                <a href="calendar.html">Basico</a>
                 <span class="icon-thumbnail">c</span>
               </li>
               <li class="">
-                <a href="calendar_lang.html">Languages</a>
+                <a href="calendar_lang.html">Lenguajes</a>
                 <span class="icon-thumbnail">L</span>
               </li>
               <li class="">
-                <a href="calendar_month.html">Month</a>
+                <a href="calendar_month.html">Mes</a>
                 <span class="icon-thumbnail">M</span>
               </li>
               <li class="">
@@ -87,14 +115,14 @@
                 <span class="icon-thumbnail">La</span>
               </li>
               <li class="">
-                <a href="http://pages.revox.io/dashboard/2.1.0/doc/#calendar" target="_blank">Documentation</a>
+                <a href="http://pages.revox.io/dashboard/2.1.0/doc/#calendar" target="_blank">Documentacion</a>
                 <span class="icon-thumbnail">D</span>
               </li>
             </ul>
           </li>
           <li class="">
             <a href="builder.html">
-              <span class="title">Builder</span>
+              <span class="title">Constructor</span>
             </a>
             <span class="icon-thumbnail"><i class="pg-layouts"></i></span>
           </li>
@@ -104,11 +132,11 @@
             <span class="icon-thumbnail"><i class="pg-layouts2"></i></span>
             <ul class="sub-menu">
               <li class="">
-                <a href="default_layout.html">Default</a>
+                <a href="default_layout.html">por Defecto</a>
                 <span class="icon-thumbnail">dl</span>
               </li>
               <li class="">
-                <a href="secondary_layout.html">Secondary</a>
+                <a href="secondary_layout.html">Secundario</a>
                 <span class="icon-thumbnail">sl</span>
               </li>
               <li class="">
