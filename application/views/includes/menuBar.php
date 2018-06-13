@@ -99,7 +99,7 @@
                 <span class="icon-thumbnail">L S</span>
               </li>
               <li class="">
-                <a href="<?php echo base_url();?>./Prestamo/index/add">Nueva Cuota</a>
+                <a href="<?php echo base_url();?>./Prestamo/index/add">Nuevo Prestamo</a>
                 <span class="icon-thumbnail">N S</span>
               </li>
             </ul>
