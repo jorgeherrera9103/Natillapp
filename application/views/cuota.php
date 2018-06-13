@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <?php include("includes/metaHeader.php");?>
-    <title>DashBoard Natillapp</title>
+    <title>Cuotas Natillapp</title>
     <?php include("includes/cssFiles.php");?>
 <?php
 if (isset($css_files)) { 

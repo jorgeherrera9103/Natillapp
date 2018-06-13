@@ -1,6 +1,6 @@
 <?php
 /**
-   * Vista del Socio de Natillapp
+   * Vista del Prestamo de Natillapp
    * Autor: Jorge Eliécer Muñoz Herrera
    * Github: http://bit.ly/GitJorge
    * 2018
@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <?php include("includes/metaHeader.php");?>
-    <title>Socios Natillapp</title>
+    <title>Prestamos Natillapp</title>
     <?php include("includes/cssFiles.php");?>
 <?php
 if (isset($css_files)) { 
@@ -42,7 +42,7 @@ if (isset($css_files)) {
                 <!-- START BREADCRUMB -->
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="<?php echo base_url();?>./principal">Natillapp</a></li>
-                  <li class="breadcrumb-item active">Socios Natillapp</li>
+                  <li class="breadcrumb-item active">Prestamos Natillapp</li>
                 </ol>
                 <!-- END BREADCRUMB -->
               </div>
@@ -52,7 +52,7 @@ if (isset($css_files)) {
           <!-- START CONTAINER FLUID -->
           <div class=" container-fluid   container-fixed-lg">
             <!-- BEGIN PlACE PAGE CONTENT HERE -->
-            <?php echo $tabla ?>
+            <?= $tabla ?>
             <!-- END PLACE PAGE CONTENT HERE -->
           </div>
           <!-- END CONTAINER FLUID -->
@@ -64,8 +64,8 @@ if (isset($css_files)) {
         <div class=" container-fluid  container-fixed-lg footer">
           <div class="copyright sm-text-center">
             <p class="small no-margin pull-left sm-pull-reset">
-              <span class="hint-text">Copyright &copy; 2017 </span>
-              <span class="font-montserrat">REVOX</span>.
+              <span class="hint-text">Copyright &copy; 2018 </span>
+              <span class="font-montserrat">NATILLAPP</span>.
               <span class="hint-text">All rights reserved. </span>
               <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> <span class="muted">|</span> <a href="#" class="m-l-10">Privacy Policy</a></span>
             </p>

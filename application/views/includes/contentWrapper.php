@@ -23,7 +23,7 @@
                           <div class="col-xs-height col-top">
                             <div class="card-header  top-left top-right">
                               <div class="card-title text-black hint-text">
-                                <span class="font-montserrat fs-11 all-caps">Weekly Sales <i
+                                <span class="font-montserrat fs-11 all-caps">Total Socios Activos <i
 		                                class="fa fa-chevron-right"></i>
                                                     </span>
                               </div>
@@ -43,7 +43,7 @@
                             <div class="row">
                               <div class="col-sm-6">
                                 <div class="p-l-20">
-                                  <h3 class="no-margin p-b-5 text-white">$14,000</h3>
+                                  <h3 class="no-margin p-b-5 text-white">2</h3>
                                   <p class="small hint-text m-t-5">
                                     <span class="label  font-montserrat m-r-5">60%</span>Higher
                                   </p>
